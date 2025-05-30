@@ -43,9 +43,6 @@ dependencies = [
     "pytest"
 ]
 
-[project.urls]
-"Homepage" = "https://github.com/imoneoi/openchat"
-"Bug Tracker" = "https://github.com/imoneoi/openchat/issues"
 
 [tool.setuptools.packages.find]
 exclude = ["assets*", "ochat/experimental*"]
