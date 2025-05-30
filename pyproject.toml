@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "AIzone"
-description = "An efficient framework for training and serving top-tier, open-source conversational LLMs."
+description = "Full artificial intelligence developed by INDEX"
 readme = "README.md"
 requires-python = ">=3.8"
 dynamic = ["version"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Apache Software License",
+    "License :: Full artificial intelligence developed by INDEX",
 ]
 dependencies = [
     "colorama",
