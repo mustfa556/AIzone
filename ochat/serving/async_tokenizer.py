@@ -1,6 +1,6 @@
 import ray
 
-from ochat.config import Message, Conversation
+from aizone.config import Message, Conversation
 
 
 @ray.remote
