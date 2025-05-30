@@ -3,7 +3,7 @@ requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ochat"
+name = "AIzone"
 description = "An efficient framework for training and serving top-tier, open-source conversational LLMs."
 readme = "README.md"
 requires-python = ">=3.8"
