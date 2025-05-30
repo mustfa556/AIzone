@@ -13,8 +13,8 @@ from vllm import LLM, SamplingParams
 
 from transformers.utils.hub import cached_file
 
-from ochat.evaluation.match_answer import MATCH_ANSWER_FUNCTION
-from ochat.config import MODEL_CONFIG_MAP
+from aizone.evaluation.match_answer import MATCH_ANSWER_FUNCTION
+from aizone.config import MODEL_CONFIG_MAP
 
 
 def _strip_first_space(s: str):
@@ -100,7 +100,7 @@ async def get_openai_answers(
 
 
 def tokenize_questions(model_config: object, conv_template: object, questions: list, condition: str, system_msg: str):
-    from ochat.config import Conversation, Message
+    from aizone.config import Conversation, Message
 
     # Construct conversation
     prompt_indices = []

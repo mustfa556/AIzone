@@ -12,9 +12,9 @@ import tqdm
 import wandb
 import numpy as np
 
-from ochat.config import MODEL_CONFIG_MAP
-from ochat.training_deepspeed.openchat_dataset import OpenchatDataset
-from ochat.training_deepspeed.hf_hub import hub_upload_check, hub_upload_model_async
+from aizone.config import MODEL_CONFIG_MAP
+from aizone.training_deepspeed.openchat_dataset import OpenchatDataset
+from aizone.training_deepspeed.hf_hub import hub_upload_check, hub_upload_model_async
 
 try:
     import deepspeed

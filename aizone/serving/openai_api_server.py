@@ -27,8 +27,8 @@ from vllm.outputs import RequestOutput
 from vllm.sampling_params import SamplingParams
 from vllm.utils import random_uuid
 
-from ochat.config import MODEL_CONFIG_MAP
-from ochat.serving import openai_api_protocol, async_tokenizer
+from aizone.config import MODEL_CONFIG_MAP
+from aizone.serving import openai_api_protocol, async_tokenizer
 
 from transformers.utils.hub import cached_file
 

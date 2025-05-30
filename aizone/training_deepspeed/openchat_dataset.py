@@ -5,7 +5,7 @@ from torch.utils.data import IterableDataset, get_worker_info
 import pyarrow.parquet as pq
 import orjson
 
-from ochat.training_deepspeed.multipack_sampler import MultipackDistributedSampler
+from aizone.training_deepspeed.multipack_sampler import MultipackDistributedSampler
 
 
 def _find_multiple(a, b):

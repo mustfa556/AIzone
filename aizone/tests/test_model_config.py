@@ -1,7 +1,7 @@
 import pytest
 from colorama import Fore
 
-from ochat.config import MODEL_CONFIG_MAP, Conversation
+from aizone.config import MODEL_CONFIG_MAP, Conversation
 
 
 def visualize_tokens(tokenizer, tokens, weights):

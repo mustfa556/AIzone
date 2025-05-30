@@ -1,17 +1,17 @@
-# OpenChat: Advancing Open-source Language Models with Mixed-Quality Data
+# AIZone: Advancing Open-source Language Models with Mixed-Quality Data
 
 <div align="center">
   <img src="assets/logo_new.png" style="width: 65%">
 </div>
 
 <p align="center">
-  <a href="https://openchat.team">💻Online Demo</a> |
-  <a href="https://huggingface.co/openchat">🤗Huggingface</a> |
+  <a href="https://aizone.team">💻Online Demo</a> |
+  <a href="https://huggingface.co/aizone">🤗Huggingface</a> |
   <a href="https://arxiv.org/pdf/2309.11235.pdf">📃Paper</a> |
   <a href="https://discord.gg/pQjnXvNKHY">💭Discord</a> 
 </p>
 
-- OpenChat is an innovative library of **open-source language models**, fine-tuned with [**C-RLFT**](https://arxiv.org/pdf/2309.11235.pdf) - a strategy inspired by offline reinforcement learning.
+- AIZone is an innovative library of **open-source language models**, fine-tuned with [**C-RLFT**](https://arxiv.org/pdf/2309.11235.pdf) - a strategy inspired by offline reinforcement learning.
 - Our models learn from mixed-quality data without preference labels, delivering exceptional performance on par with `ChatGPT`, even with a `7B` model which can be run on a **consumer GPU (e.g. RTX 3090)**.
 - Despite our simple approach, we are committed to developing a high-performance, commercially viable, open-source large language model, and we continue to make significant strides toward this vision.
 
@@ -19,31 +19,31 @@
 
 # ✨ News
 
- - [2024/05/22] We released the Llama-3 based version [OpenChat 3.6 20240522](https://huggingface.co/openchat/openchat-3.6-8b-20240522), outperforming official Llama 3 8B Instruct and open-source finetunes/merges.
+ - [2024/05/22] We released the Llama-3 based version [AIZone 3.6 20240522](https://huggingface.co/aizone/aizone-3.6-8b-20240522), outperforming official Llama 3 8B Instruct and open-source finetunes/merges.
 
-- [2024/01/06] We released the second update, [OpenChat 3.5 0106](openchat/openchat-3.5-0106), further improved coding and overall performance 🏆.
+- [2024/01/06] We released the second update, [AIZone 3.5 0106](aizone/aizone-3.5-0106), further improved coding and overall performance 🏆.
 
-- [2023/12/10] We released the first update, [OpenChat 3.5 1210](openchat/openchat-3.5-1210), improved coding by 15 points 🚀.
+- [2023/12/10] We released the first update, [AIZone 3.5 1210](aizone/aizone-3.5-1210), improved coding by 15 points 🚀.
 
-- [2023/11/01] We released the [OpenChat-3.5-7B](https://huggingface.co/openchat/openchat_3.5) model, surpassing ChatGPT on various benchmarks 🔥.
+- [2023/11/01] We released the [AIZone-3.5-7B](https://huggingface.co/aizone/aizone_3.5) model, surpassing ChatGPT on various benchmarks 🔥.
 
-- [2023/09/21] We released our paper [OpenChat: Advancing Open-source Language Models with Mixed-Quality Data](https://arxiv.org/pdf/2309.11235.pdf).
+- [2023/09/21] We released our paper [AIZone: Advancing Open-source Language Models with Mixed-Quality Data](https://arxiv.org/pdf/2309.11235.pdf).
   
 <details>
   <summary>Read more</summary>
   
-- [2023/09/03] We released the [OpenChat V3.2 SUPER]([#models](https://huggingface.co/openchat/openchat_v3.2_super)) model.
+- [2023/09/03] We released the [AIZone V3.2 SUPER]([#models](https://huggingface.co/aizone/aizone_v3.2_super)) model.
 
-- [2023/08/04] We have launched an [Online Demo](https://openchat.team) featuring the latest version, OpenChat 3.2.
+- [2023/08/04] We have launched an [Online Demo](https://aizone.team) featuring the latest version, AIZone 3.2.
 
-- [2023/07/30] We are thrilled to introduce the [OpenChat V3 model series](#models), based on Llama 2, and now available for free for commercial use!
+- [2023/07/30] We are thrilled to introduce the [AIZone V3 model series](#models), based on Llama 2, and now available for free for commercial use!
 
-- [2023/07/07] We released the [OpenChat V2 model series](#legacy-models).
+- [2023/07/07] We released the [AIZone V2 model series](#legacy-models).
 
-- [2023/07/01] We released the [OpenChat V1 model series](#legacy-models).
+- [2023/07/01] We released the [AIZone V1 model series](#legacy-models).
 </details>
 
-# 🏷️ Benchmarks - OpenChat 3.6
+# 🏷️ Benchmarks - AIZone 3.6
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/imoneoi/openchat/master/assets/benchmarks-openchat-3.6-20240522.svg" style="width: 95%;">
@@ -55,8 +55,8 @@
 Note: Please run the following commands at the base directory of this repository.
 
 ```bash
-python -m ochat.evaluation.run_eval --condition "GPT4 Correct" --model openchat/openchat-3.6-8b-20240522 --eval_sets fs_cothub/mmlu fs_cothub/gsm8k fs_cothub/math
-python -m ochat.evaluation.run_eval --condition "GPT4" --model openchat/openchat-3.6-8b-20240522 --eval_sets zs/gpqa
+python -m aizone.evaluation.run_eval --condition "GPT4 Correct" --model aizone/aizone-3.6-8b-20240522 --eval_sets fs_cothub/mmlu fs_cothub/gsm8k fs_cothub/math
+python -m aizone.evaluation.run_eval --condition "GPT4" --model aizone/aizone-3.6-8b-20240522 --eval_sets zs/gpqa
 ```
 
 HumanEval is run using the official [EvalPlus repository](https://github.com/evalplus/evalplus).
@@ -103,9 +103,9 @@ Reasoning and Coding:
 Note: Please run the following commands at the base directory of this repository.
 
 ```bash
-python -m ochat.evaluation.run_eval --condition "GPT4 Correct" --model openchat/openchat-3.5-0106 --eval_sets coding fs_cothub/bbh fs_cothub/mmlu zs/agieval zs/bbh_mc_orca zs/truthfulqa_orca
-python ochat/evaluation/view_results.py
-python ochat/evaluation/convert_to_evalplus.py
+python -m aizone.evaluation.run_eval --condition "GPT4 Correct" --model aizone/aizone-3.5-0106 --eval_sets coding fs_cothub/bbh fs_cothub/mmlu zs/agieval zs/bbh_mc_orca zs/truthfulqa_orca
+python aizone/evaluation/view_results.py
+python aizone/evaluation/convert_to_evalplus.py
 ```
 
 Then all humaneval code samples are placed in `ochat/evaluation/evalplus_codegen`. Use the following command to evaluate an individual code sample named `samples.jsonl` using Docker as a sandbox.
@@ -119,8 +119,8 @@ Mathematical Reasoning:
 Note: Please run the following commands at the base directory of this repository.
 
 ```bash
-python -m ochat.evaluation.run_eval --condition "Math Correct" --model openchat/openchat-3.5-0106 --eval_sets fs_cothub/gsm8k zs/math
-python ochat/evaluation/view_results.py
+python -m aizone.evaluation.run_eval --condition "Math Correct" --model aizone/aizone-3.5-0106 --eval_sets fs_cothub/gsm8k zs/math
+python aizone/evaluation/view_results.py
 ```
 
 MT-Bench:
@@ -351,7 +351,7 @@ C-RLFT example:
 You'll then need to pre-tokenize the dataset using the command (please specify a filename as `PRETOKENIZED_DATA_OUTPUT_PATH` to store the pretokenized dataset):
 
 ```bash
-python -m ochat.data.generate_dataset --model-type MODEL_TYPE --model-path BASE_REPO --in-files data.jsonl --out-prefix PRETOKENIZED_DATA_OUTPUT_PATH
+python -m aizone.data.generate_dataset --model-type MODEL_TYPE --model-path BASE_REPO --in-files data.jsonl --out-prefix PRETOKENIZED_DATA_OUTPUT_PATH
 ```
 
 ### Launching the OpenChat Trainer

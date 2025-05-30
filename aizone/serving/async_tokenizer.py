@@ -6,7 +6,7 @@ from aizone.config import Message, Conversation
 @ray.remote
 class AsyncTokenizer:
     def __init__(self, model_type: str, model_path: str) -> None:
-        from ochat.config import MODEL_CONFIG_MAP
+        from aizone.config import MODEL_CONFIG_MAP
 
         config = MODEL_CONFIG_MAP[model_type]
         tokenizer = config.model_tokenizer_create(model_path)
