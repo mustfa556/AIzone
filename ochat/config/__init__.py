@@ -5,7 +5,7 @@ import transformers
 
 from ochat.config.model_config import ModelConfig
 from ochat.config.conversation_template import Message, Conversation, ConversationTemplate
-import ochat.models
+import AIzone.models
 
 
 _GEMMA_IT_PREFIXES = {
